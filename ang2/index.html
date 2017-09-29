@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var x = document.getElementById("output").innerHTML;
+        function getName() {
+           x = "asdasdasdas";
+        }
+    </script>
+
+</head>
+<body>
+<div>
+    <form>
+        <input type="text" id="bla"/>
+        <input type="submit" onsubmit="getName()"/>
+        <br/>
+    </form>
+    <div id="output">asdasd</div>
+</div>
+
+<!--<div ng-app="name" ng-controller="blaController">
+<form>
+    groesse:<input type="number" ng-model="groesse"/>
+    <br/>
+    gewicht:<input type="number" ng-model="gewicht"/>
+    <br/>
+    {{bmi()}}
+    <span>{{info()}}</span>
+</form>
+</div>
+<script>
+ var app = angular.module('name',[]);
+ app.controller('blaController',function($scope){
+    $scope.bmi = function () {
+        var bmi = $scope.gewicht / ($scope.groesse* $scope.groesse);
+        if(!isNaN(bmi)) {
+            return bmi.toFixed(2)
+        }
+        return 0;
+    }
+    $scope.info = function () {
+        var x = this.bmi();
+        if(x==0){
+            return "bitte gib was ein";
+        }
+        else if(x>0 && x<=20){
+            return"untergewicht";
+        }
+        else if(x>=20 && x<=34){
+            return "alles ok";
+        }
+        else{
+            return "zu fett dude";
+        }
+
+    }
+ });
+
+</script>-->
+</body>
+</html>
