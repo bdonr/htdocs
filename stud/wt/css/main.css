@@ -1,0 +1,91 @@
+﻿#page{
+	font-size:100%;
+	font-family: Verdana, 'Lucida Sans Unicode', sans-serif;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:yellow;
+	z-index:0;
+	background:url(./csspics/loginHintergrund.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	min-width:500px;
+	min-height:600px;
+	text-align:center;
+}
+
+.error {color: #FF0000;}
+
+#twentyheightBox{
+	text-align:center;
+	position:relative;
+	top:20px;
+	left:0;
+	height:25%;
+}
+
+
+#mainLogin{
+	position:relative;
+	background-image: url(./csspics/loginKatzen.jpg);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+	left:0;
+	width:100%;
+	height:75%;
+	text-align:center;
+	z-index:2;
+}
+
+
+#_menue{
+	position:fixed;
+	background-color:red;
+	top:20%;
+	left:0;
+	z-index:1;
+	height:60%;
+	width:150px;
+	
+	
+}
+
+#content{
+	
+}
+
+#_account{
+	position:fixed;
+	background-color:green;
+	top:20%;
+	right:0;
+	z-index:1;
+	height:60%;
+	width:150px;
+}
+
+#impressum{
+	position:fixed;
+	font-size:0.75rem;
+	bottom:0;
+	left:20%;
+	z-index:1;
+	height:50px;
+	width:60%;
+	min-width:700px;
+	text-align:center;
+}
+
+#registerFenster{
+	position:absolute;
+	z-index:1;
+	top:35%;
+	left:30%;
+	width:40%;
+	height:30%;
+	min-width:300px;
+	min-height:400px;
+
+}

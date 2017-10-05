@@ -1,0 +1,6 @@
+<p>
+  {{adress?.street}}
+  {{adress?.housenumber}}
+
+  <app-city *ngIf="adress?.city" [city]="adress.city" ></app-city>
+</p>

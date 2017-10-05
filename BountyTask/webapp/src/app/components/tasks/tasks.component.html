@@ -1,0 +1,17 @@
+
+<form>
+    <div class="form-group">
+        <label for="email">e</label>
+        <input  [(ngModel)]="search" name="search" (keydown)="onChange($event.target.value)"  (keyup)="onChange($event.target.value)" type="email" class="form-control" id="email" >
+        <select name="singleSelect" ng-model="data.singleSelect">
+            <option *ngFor="let course of objArray" [value]="course">{{ course.name }}({{course.id}})</option>
+            {{course}}
+        </select>
+
+
+
+    </div>
+</form>
+<nav *ngFor="let x of tasks">
+    <a routerLink="/task/{{x.id}}">{{x.name}}</a>
+</nav>

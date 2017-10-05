@@ -1,0 +1,7 @@
+{
+  "name": "rest",
+  "require" :{
+    "slim/slim":"3.*"
+  }
+
+}

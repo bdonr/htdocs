@@ -1,0 +1,9 @@
+<form>
+  <div class="form-group">
+    <label for="search">Email-Adresse</label>
+    <input [(ngModel)]="search" name="search" type="text" class="form-control" id="search"  (keyup)="getCounty()" (keydown)="getCounty()">
+  </div>
+</form>
+{{search}}
+
+<app-country *ngFor="let country of country" [country]="country"></app-country>

@@ -1,0 +1,28 @@
+<form>
+    <div class="form-group">
+        <label for="email">Email-Adresse</label>
+        <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email">
+        <div *ngIf="email?.invalid && (email?.dirty || email?.touched)"
+             class="alert alert-danger">
+
+            <div *ngIf="email?.errors.required">
+                Name is required.
+            </div>
+            <div *ngIf="email?.errors.minlength">
+                Name must be at least 4 characters long.
+            </div>
+
+        </div>
+
+
+
+
+
+        <label for="pwd">Passwort</label>
+        <input [(ngModel)]="pwd" name="pwd" type="password" class="form-control" id="pwd">
+    <button type="button" (click)="login()">login</button>
+
+        {{email}}
+        {{pwd}}
+    </div>
+</form>

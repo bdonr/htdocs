@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .bla{
+            background: coral;
+        }
+
+        .ok{
+            background: green;
+        }
+
+        .ok-1{
+            background: white;
+        }
+    </style>
+    <script type="text/javascript">
+        function berechen() {
+            var gros = document.getElementById("groesse").value;
+            var gew = document.getElementById("gewicht").value;
+            var bmi = gew/(gros*gros);
+            var aus = document.getElementById("ausgabe");
+            aus.innerHTML = "dein gewicht"+gew+"kg deine groesse"+gros+"mit deinem  bmi von "+bmi+"bist du"+(bmi<20 ? "lauch": bmi>20 && bmi<30 ? "normal bitch":"fettes sau");
+        }
+        function checkgroesse() {
+            if(document.getElementById("groesse").value<0.10){
+                document.getElementById("warning").innerHTML = "bullshit";
+                document.getElementById("groesse").className = 'bla';
+                document.getElementById("info").innerHTML = "bitte zwischen 1m und 2m eingeben";
+            }
+            else{
+                document.getElementById("warning").innerHTML = "cool";
+                document.getElementById("groesse").className = 'ok';
+            }
+            if(document.getElementById("groesse").value.length==0){
+                document.getElementById("groesse").className='ok-1';
+            }
+        }
+
+
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get">
+    <input id="groesse" class="ok-1" type="number" name="grosse" onkeypress="checkgroesse()" onchange="checkgroesse()" onkeyup="checkgroesse()">
+    <span id="error"></span>
+    <span id="warning"></span>
+    <span id="info"></span>
+    <input id="gewicht" type="number" name="gewicht">
+    <span id="error_gewicht"></span>
+    <span id="warning_gewicht"></span>
+    <span id="ok_gewicht"></span>
+    <input type="button" onclick="berechen()"value="send">
+<span id="ausgabe"></span>
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+  {{task.name}}
+ <div *ngIf="isOwn || isAdmin">
+   <a href="edit">edit</a>
+ </div>
+
+  <div *ngIf="isOwn || isAdmin">
+    <a href="delete">delete</a>
+  </div>
+  <app-adress *ngIf="task.adress" [adress]="task.adress"></app-adress>
+
+  <h1>
+    publisher
+
+  </h1>
+
+  <nav *ngIf="task.owner">
+    <a routerLink="/profile/{{task.owner.id}}">/profile/{{task.owner.id}}</a>
+  </nav>
+
+
+  <h1>
+  users in group
+
+</h1>
+
+  <nav *ngFor="let user of task.users">
+    <a routerLink="/profile/{{user.id}}">/profile/{{user.id}}</a>
+  </nav>

@@ -1,0 +1,21 @@
+<list>
+<users>
+  <user>
+<name>muh9</name>
+<date>2017.04.19</date>
+<uploads>1</uploads>
+  <pictures>
+    <picture><name>huhu1</name></picture>
+  </pictures>
+</user>
+<user>
+<name>muh10</name>
+<date>2017.04.19</date>
+<uploads>2</uploads>
+  <pictures>
+<picture><name>huhu2</name></picture>
+<picture><name>huhu3</name></picture>
+  </pictures>
+</user>
+</users>
+</list>

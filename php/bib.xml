@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bib SYSTEM "bib.dtd">
+<bib>
+	<bibitem type="book" label="GhKoRaSt2014">
+		
+		<authors>
+			<author>yxcyxc
+				<name>Gharbi</name>
+				<firstname>Mahbouba</firstname>
+			</author>
+			<author>
+				<name>Koschel</name>
+				<firstname>Arne</firstname>
+			</author>
+			<author>
+				<name>Rausch</name>
+				<firstname>Andreas</firstname>
+			</author>
+
+			<author>
+				<name>Starke</name>
+				<firstname>Gernot</firstname>
+			</author>
+		</authors>
+		<year>2014</year>
+		<isbn>978-3-86490-165-2</isbn>
+		<address>Heidelberg</address>
+		<publisher>dpunkt</publisher>
+		<title> Basiswissen f. Softwarearchitekten: Aus- und Weiterbildung nach iSAQB-Standard zum Certified Professional for Software Architecture - Foundation Level, 2. Auflage</title>
+		<note/>
+	</bibitem>
+
+	<bibitem type="inproceedings" label="AsKoKlNi2015">
+		
+		<authors>
+			<author>
+				<name>Astrova</name>
+				<firstname>Irina</firstname>
+			</author>
+			<author>
+				<name>Koschel</name>
+				<firstname>Arne</firstname>
+			</author>
+			<author>
+				<name>Kleiner</name>
+				<firstname>Carsten</firstname>
+			</author>
+
+			<author>
+				<name>Nietz</name>
+				<firstname>Stefan</firstname>
+			</author>
+		</authors>
+		<title> Cloud-Based Notification Distribution</title>
+		<booktitle>Proc. 2nd ACM International Conference on Mobile Software Engineering and Systems (ACM MOBILESoft)</booktitle>
+		<year>2015</year>
+		<pages>
+		  <start>154</start>
+		  <end>155</end>
+		</pages>
+		<publisher>IEEE</publisher>
+		<adress>USA</adress>
+	</bibitem>
+
+	<bibitem type="article" label="KoLo1998">
+		<authors>
+			<author>
+				<name>Koschel</name>
+				<firstname>Arne</firstname>
+			</author>
+			<author>
+				<name>Lockemann</name>
+				<firstname>Peter</firstname>
+			</author>
+		</authors>
+		<title> Distributed Events in Active Database Systems:Letting the Genie out of the Bottle </title>
+		<journal>Data Knowl. Eng. (DKE)</journal>
+		<year>1998</year>
+		<volume>25</volume>
+		<numbers>
+			<start>1</start>
+			<end>2</end>
+		</numbers>
+		<pages>
+		  <start>11</start>
+		  <end>28</end>
+		</pages>
+		<note/>
+	</bibitem>
+
+
+</bib>

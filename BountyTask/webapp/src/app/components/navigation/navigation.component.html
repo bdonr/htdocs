@@ -1,0 +1,25 @@
+<nav>
+
+  <a href  (click)="logout()" >logout</a>
+
+  <div *ngIf="!isloggedin">
+    <a  routerLink="/login">login</a>
+  </div>
+<div *ngIf="!isloggedin">
+  <a  routerLink="/register">register</a>
+</div>
+
+  <div *ngIf="isloggedin &&isAdmin ">
+    <a  routerLink="/admin">admin</a>
+  </div>
+  <div>
+    <a  routerLink="/task">task</a>
+  </div>
+
+</nav>
+<nav><div *ngIf="user!=null">{{user.email}}
+  {{user.password}}
+  {{user.email}}
+</div>
+</nav>
+<router-outlet></router-outlet>

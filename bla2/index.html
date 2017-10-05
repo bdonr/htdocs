@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.js"></script>
+    <script>
+        var app = angular.module('huso',[]);
+        app.controller('fickdich',function ($scope) {
+            if(isNAN())
+        });
+
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<div ng-app="huso" ng-controller="fickdich">
+
+    <form>
+        <input type="number" ng-model="gew">
+        <input type="number" ng-model="groesse">
+        <p >{{gew/(groesse*groesse)}}bmi</p>
+    </form>
+<span ng-model="text">{{bla}}</span>
+</div>
+</body>
+</html>
